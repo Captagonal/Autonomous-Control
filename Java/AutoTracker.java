@@ -29,13 +29,13 @@ import frc.robot.commands.intake;
 import frc.robot.subsystems.Arm.ArmSubsystem;
 import frc.robot.subsystems.Auton.AutoDirector.Auto;
 
-public class AutoTrackerV2 extends SequentialCommandGroup {
+public class AutoTracker extends SequentialCommandGroup {
 
     private AutoSubsystems subsystems;
 
     private PathConstraints constraints = AutoConstants.constraints;
 
-    public AutoTrackerV2(AutoSubsystems subsystems, Supplier<Pose2d> initalPose) {
+    public AutoTracker(AutoSubsystems subsystems, Supplier<Pose2d> initalPose) {
         SmartDashboard.putBoolean("scored", false);
         this.subsystems = subsystems;
         addCommands(Commands.print("Auto Time"));

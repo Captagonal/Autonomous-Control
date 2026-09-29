@@ -164,7 +164,7 @@ public class AutoDirector {
   }
 
   public Auto CenterSideV2() {
-    AutoTrackerV2 tracker = new AutoTrackerV2(subsystems, () -> PositionConstants.startingPoses.CenterLeft());
+    Autotracker tracker = new AutoTrackerV2(subsystems, () -> PositionConstants.startingPoses.CenterLeft());
     tracker.addPreload("R6A");
     tracker.addSector(new AutoSector("C1", "R6B"));
     tracker.addSector(new AutoSector("C2", "R8A"));
